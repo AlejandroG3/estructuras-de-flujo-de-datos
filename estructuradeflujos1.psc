@@ -1,14 +1,14 @@
 Algoritmo flujograma1
-	Definir fecha,año Como Real
+	Definir fecha,aÃ±o Como Real
 	fecha=0; 
-	año=0;
-	imprimir "ingrese el año, mes y día(en caso de mes o dia de un solo numero complete con 0 a la izquierda o derecha)";
+	aÃ±o=0;
+	imprimir "ingrese el dÃ­a,mes y aÃ±o(en caso de mes o dia de un solo numero complete con 0 a la izquierda o derecha)";
 	leer fecha;
-	año=trunc(fecha/10000);
-	si año%4=0 Y ((año%400=0) o (año%100<>0)) Entonces
-		imprimir año," es un año bisiesto";
+	aÃ±o=trunc(fecha%10000);
+	si aÃ±o%4=0 Y ((aÃ±o%400=0) o (aÃ±o%100<>0)) Entonces
+		imprimir aÃ±o," es un aÃ±o bisiesto";
 	SiNo
-		escribir año, " no es un año bisiesto";
+		escribir aÃ±o, " no es un aÃ±o bisiesto";
 		
 	FinSi
 	
